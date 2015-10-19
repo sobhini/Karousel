@@ -8,18 +8,41 @@
 
 import UIKit
 
-class tutorialViewController: UIViewController {
+class tutorialViewController: UIViewController, UIScrollViewDelegate {
+    
 
     @IBOutlet weak var tutorialScrollView: UIScrollView!
+    
+    @IBOutlet weak var tutotialPageControl: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tutorialScrollView.contentSize = CGSize(width: 1280, height: 568)
+        tutorialScrollView.delegate = self
         
         // Do any additional setup after loading the view.
     }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+    
+        let page : Int = Int(round(scrollView.contentOffset.x / 320))
+        
+        tutotialPageControl.currentPage = page
+    }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView){
+        
+    }
 
+    func scrollViewWillBeginDragging(scrollView: UIScrollView){
+        
+    }
+    
+    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool){
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

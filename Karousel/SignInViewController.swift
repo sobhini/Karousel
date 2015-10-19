@@ -63,15 +63,14 @@ class SignInViewController: UIViewController {
     @IBAction func didPressSignIn(sender: UIButton) {
         
         if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
+        
+            presentViewController(emptyFieldAlertController, animated: true){
             
             self.emptyFieldAlertController.addAction(self.OKAction)
-            presentViewController(emptyFieldAlertController, animated: true){
-                
-                
                 
             }
             
-            
+
         }
         
         //var email = emailTextField.text
