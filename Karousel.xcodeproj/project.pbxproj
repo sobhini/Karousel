@@ -14,6 +14,11 @@
 		FB0B020A1BD1816400A7C38F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0B02081BD1816400A7C38F /* LaunchScreen.storyboard */; };
 		FB0B02151BD1816400A7C38F /* KarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B02141BD1816400A7C38F /* KarouselTests.swift */; };
 		FB0B02201BD1816400A7C38F /* KarouselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B021F1BD1816400A7C38F /* KarouselUITests.swift */; };
+		FB0B022E1BD181E100A7C38F /* Common (1).swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B022D1BD181E100A7C38F /* Common (1).swift */; settings = {ASSET_TAGS = (); }; };
+		FB0B02301BD1821400A7C38F /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B022F1BD1821400A7C38F /* IntroViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		FB0B02331BD195AC00A7C38F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B02321BD195AC00A7C38F /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		FB0B02351BD2E1D000A7C38F /* tutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B02341BD2E1D000A7C38F /* tutorialViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		FB0B02371BD5575100A7C38F /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0B02361BD5575100A7C38F /* TimelineViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		FB0B021B1BD1816400A7C38F /* KarouselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarouselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0B021F1BD1816400A7C38F /* KarouselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarouselUITests.swift; sourceTree = "<group>"; };
 		FB0B02211BD1816400A7C38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0B022D1BD181E100A7C38F /* Common (1).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Common (1).swift"; sourceTree = "<group>"; };
+		FB0B022F1BD1821400A7C38F /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		FB0B02321BD195AC00A7C38F /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FB0B02341BD2E1D000A7C38F /* tutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tutorialViewController.swift; sourceTree = "<group>"; };
+		FB0B02361BD5575100A7C38F /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +107,11 @@
 		FB0B01FE1BD1816400A7C38F /* Karousel */ = {
 			isa = PBXGroup;
 			children = (
+				FB0B02311BD1821E00A7C38F /* View Controllers */,
 				FB0B01FF1BD1816400A7C38F /* AppDelegate.swift */,
 				FB0B02011BD1816400A7C38F /* ViewController.swift */,
 				FB0B02031BD1816400A7C38F /* Main.storyboard */,
+				FB0B022D1BD181E100A7C38F /* Common (1).swift */,
 				FB0B02061BD1816400A7C38F /* Assets.xcassets */,
 				FB0B02081BD1816400A7C38F /* LaunchScreen.storyboard */,
 				FB0B020B1BD1816400A7C38F /* Info.plist */,
@@ -123,6 +135,17 @@
 				FB0B02211BD1816400A7C38F /* Info.plist */,
 			);
 			path = KarouselUITests;
+			sourceTree = "<group>";
+		};
+		FB0B02311BD1821E00A7C38F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB0B022F1BD1821400A7C38F /* IntroViewController.swift */,
+				FB0B02321BD195AC00A7C38F /* SignInViewController.swift */,
+				FB0B02341BD2E1D000A7C38F /* tutorialViewController.swift */,
+				FB0B02361BD5575100A7C38F /* TimelineViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +283,11 @@
 			files = (
 				FB0B02021BD1816400A7C38F /* ViewController.swift in Sources */,
 				FB0B02001BD1816400A7C38F /* AppDelegate.swift in Sources */,
+				FB0B02351BD2E1D000A7C38F /* tutorialViewController.swift in Sources */,
+				FB0B022E1BD181E100A7C38F /* Common (1).swift in Sources */,
+				FB0B02371BD5575100A7C38F /* TimelineViewController.swift in Sources */,
+				FB0B02331BD195AC00A7C38F /* SignInViewController.swift in Sources */,
+				FB0B02301BD1821400A7C38F /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
