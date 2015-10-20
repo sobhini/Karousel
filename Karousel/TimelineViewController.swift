@@ -10,10 +10,13 @@ import UIKit
 
 class TimelineViewController: UIViewController {
     
-    @IBOutlet weak var timelineScrollView: UIScrollView!
-
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        scrollView.contentSize = CGSize(width: 320, height: 1570)
 
         // Do any additional setup after loading the view.
     }

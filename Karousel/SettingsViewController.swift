@@ -10,8 +10,16 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var back: UIButton!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var Signout: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       scrollView.contentSize = CGSize(width: 320, height: 800)
 
         // Do any additional setup after loading the view.
     }

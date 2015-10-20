@@ -10,6 +10,8 @@ import UIKit
 
 class ConversationViewController: UIViewController {
 
+    @IBOutlet weak var back: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
